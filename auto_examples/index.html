@@ -1,0 +1,300 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+  
+    <title>Examples &mdash; sklearn-theano 0.0.1 documentation</title>
+  <!-- htmltitle is before nature.css - we use this hack to load bootstrap first -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../_static/css/bootstrap.min.css" media="screen" />
+  <link rel="stylesheet" href="../_static/css/bootstrap-responsive.css"/>
+
+    
+    <link rel="stylesheet" href="../_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/js/copybutton.js"></script>
+    <script type="text/javascript" src="../_static/js/examples.js"></script>
+    <link rel="shortcut icon" href="../_static/mini_sloth_bw.ico"/>
+    <link rel="author" title="About these documents" href="../about.html" />
+    <link rel="top" title="sklearn-theano 0.0.1 documentation" href="../index.html" />
+    <link rel="next" title="Generative networks for random MNIST digits" href="plot_mnist_generator.html" />
+    <link rel="prev" title="2. Dataset loading utilities" href="../datasets/index.html" />
+  
+   
+       <script type="text/javascript" src="../_static/sidebar.js"></script>
+   
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="../_static/js/bootstrap.min.js" type="text/javascript"></script>
+  <link rel="canonical" href="http://sklearn-theano.github.io/dev/auto_examples/index.html" />
+
+  <script type="text/javascript">
+    $("div.buttonNext, div.buttonPrevious").hover(
+       function () {
+           $(this).css('background-color', '#FF9C34');
+       },
+       function () {
+           $(this).css('background-color', '#A7D6E2');
+       }
+    );
+    var bodywrapper = $('.bodywrapper');
+    var sidebarbutton = $('#sidebarbutton');
+    sidebarbutton.css({'height': '900px'});
+  </script>
+
+  </head>
+  <body>
+
+<div class="header-wrapper">
+    <div class="header">
+        <p class="logo"><a href="../index.html">
+            <img src="../_static/mini_sloth_bw.png" alt="Logo"/>
+        </a>
+        </p><div class="navbar">
+            <ul>
+                <li><a href="../../dev/index.html">Home</a></li>
+                <li><a href="../../dev/install.html">Installation</a></li>
+                <li class="btn-li"><div class="btn-group">
+		      <a href="../documentation.html">Documentation</a>
+		      <a class="btn dropdown-toggle" data-toggle="dropdown">
+			     <span class="caret"></span>
+		      </a>
+		      <ul class="dropdown-menu">
+			<li class="link-title">sklearn-theano 0.1 (development)</li>
+			<li><a href="../user_guide.html">User guide</a></li>
+			<li><a href="../modules/classes.html">API</a></li>
+			<li class="divider"></li>
+		        <li><a href="http://sklearn-theano.github.io/dev/documentation.html">Development</a></li>
+		        <li><a href="../documentation.html">More versions...</a></li>
+		      </ul>
+		    </div>
+		</li>
+            <li><a href="#">Examples</a></li>
+            </ul>
+
+            <div class="search_form">
+                <div id="cse" style="width: 100%;"></div>
+            </div>
+        </div> <!-- end navbar --></div>
+</div>
+
+
+<!-- Github "fork me" ribbon -->
+<a href="https://github.com/sklearn-theano/sklearn-theano">
+  <img class="fork-me"
+       style="position: absolute; top: 0; right: 0; border: 0;"
+       src="../_static/img/forkme.png"
+       alt="Fork me on GitHub" />
+</a>
+
+<div class="content-wrapper">
+    <div class="sphinxsidebar">
+    <div class="sphinxsidebarwrapper">
+        <div class="rel rellarge">
+    
+
+  <!-- rellinks[1:] is an ugly hack to avoid link to module
+  index -->
+        <div class="rellink">
+        <a href="../datasets/index.html"
+        accesskey="P">Previous
+        <br/>
+        <span class="smallrellink">
+        2. Dataset loadi...
+        </span>
+            <span class="hiddenrellink">
+            2. Dataset loading utilities
+            </span>
+        </a>
+        </div>
+            <div class="spacer">
+            &nbsp;
+            </div>
+        <div class="rellink">
+        <a href="plot_mnist_generator.html"
+        accesskey="N">Next
+        <br/>
+        <span class="smallrellink">
+        Generative netwo...
+        </span>
+            <span class="hiddenrellink">
+            Generative networks for random MNIST digits
+            </span>
+        </a>
+        </div>
+
+    <!-- Ad a link to the 'up' page -->
+    </div>
+    
+      <p class="doc-version">This documentation is for sklearn-theano <strong>version 0.0.1</strong> &mdash; <a href="http://sklearn-theano.github.io/dev/support.html#documentation-resources">Other versions</a></p>
+    <p class="citing">If you are reading this, thanks for using <a href="../about.html#sklearn-theano">sklearn-theano</a>.</p>
+    <ul>
+<li><a class="reference internal" href="#">Examples</a><ul>
+<li><a class="reference internal" href="#general-examples">General examples</a><ul>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</div>
+
+
+
+      <div class="content">
+            
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <style type="text/css">
+div#sidebarbutton {
+    /* hide the sidebar collapser, while ensuring vertical arrangement */
+    width: 0px;
+    overflow: hidden;
+}
+</style><div class="section" id="examples">
+<h1>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="general-examples">
+<span id="examples-index"></span><span id="id1"></span><h2>General examples<a class="headerlink" href="#general-examples" title="Permalink to this headline">¶</a></h2>
+<p>These are general purpose examples which show a few of the capabilities
+and intended uses of <tt class="docutils literal"><span class="pre">sklearn-theano</span></tt>.</p>
+<div class="thumbnailContainer">
+    <div class="docstringWrapper"><div class="figure">
+<a class="reference external image-reference" href="./plot_mnist_generator.html"><img alt="../_images/plot_mnist_generator.png" src="../_images/plot_mnist_generator.png" /></a>
+<p class="caption"><a class="reference internal" href="plot_mnist_generator.html#example-plot-mnist-generator-py"><em>Generative networks for random MNIST digits</em></a></p>
+</div>
+<p>This demo of an MNIST generator is based on the work of I. Goodfellow, J. Pouget-Abadie, M. Mir...
+</p></div>
+</div><div class="toctree-wrapper compound">
+</div>
+<div class="thumbnailContainer">
+    <div class="docstringWrapper"><div class="figure">
+<a class="reference external image-reference" href="./plot_single_localization.html"><img alt="../_images/plot_single_localization.png" src="../_images/plot_single_localization.png" /></a>
+<p class="caption"><a class="reference internal" href="plot_single_localization.html#example-plot-single-localization-py"><em>Drawing bounding boxes for localization</em></a></p>
+</div>
+<p>Drawing a bounding box on a detected object is crucial to properly finding objects in images. O...
+</p></div>
+</div><div class="toctree-wrapper compound">
+</div>
+<div class="thumbnailContainer">
+    <div class="docstringWrapper"><div class="figure">
+<a class="reference external image-reference" href="./plot_classification.html"><img alt="../_images/plot_classification.png" src="../_images/plot_classification.png" /></a>
+<p class="caption"><a class="reference internal" href="plot_classification.html#example-plot-classification-py"><em>Classification and top N prediction probabilities</em></a></p>
+</div>
+<p>In this example, an image is input to an OverfeatClassifier, and the top N probability outputs ...
+</p></div>
+</div><div class="toctree-wrapper compound">
+</div>
+<div class="thumbnailContainer">
+    <div class="docstringWrapper"><div class="figure">
+<a class="reference external image-reference" href="./plot_asirra_dataset.html"><img alt="../_images/plot_asirra_dataset.png" src="../_images/plot_asirra_dataset.png" /></a>
+<p class="caption"><a class="reference internal" href="plot_asirra_dataset.html#example-plot-asirra-dataset-py"><em>Asirra dataset classification using transformer</em></a></p>
+</div>
+<p>This example shows a basic use of the OverfeatTransformer in a scikit-learn pipeline in order t...
+</p></div>
+</div><div class="toctree-wrapper compound">
+</div>
+<div class="thumbnailContainer">
+    <div class="docstringWrapper"><div class="figure">
+<a class="reference external image-reference" href="./plot_multiple_localization.html"><img alt="../_images/plot_multiple_localization.png" src="../_images/plot_multiple_localization.png" /></a>
+<p class="caption"><a class="reference internal" href="plot_multiple_localization.html#example-plot-multiple-localization-py"><em>Localizing multiple objects in an image</em></a></p>
+</div>
+<p>Extending on the ``plot_localization_tutorial`` example, there are more advanced ways to search...
+</p></div>
+</div><div class="toctree-wrapper compound">
+</div>
+<div class="thumbnailContainer">
+    <div class="docstringWrapper"><div class="figure">
+<a class="reference external image-reference" href="./plot_overfeat_layer1_filters.html"><img alt="../_images/plot_overfeat_layer1_filters.png" src="../_images/plot_overfeat_layer1_filters.png" /></a>
+<p class="caption"><a class="reference internal" href="plot_overfeat_layer1_filters.html#example-plot-overfeat-layer1-filters-py"><em>Visualization of first layer filters</em></a></p>
+</div>
+<p>The first layers of convolutional neural networks often have very "human interpretable" values,...
+</p></div>
+</div><div class="toctree-wrapper compound">
+</div>
+<div class="thumbnailContainer">
+    <div class="docstringWrapper"><div class="figure">
+<a class="reference external image-reference" href="./plot_localization_tutorial.html"><img alt="../_images/plot_localization_tutorial.png" src="../_images/plot_localization_tutorial.png" /></a>
+<p class="caption"><a class="reference internal" href="plot_localization_tutorial.html#example-plot-localization-tutorial-py"><em>Localizing an object in a large image</em></a></p>
+</div>
+<p>Convolutional neural networks can also be used to localize an object in a large image. This exa...
+</p></div>
+</div><div class="toctree-wrapper compound">
+</div>
+<div class="clearer"></div></div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+        <div class="clearer"></div>
+      </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2014 - 2016, sklearn-theano developers (BSD License).
+      <a href="../_sources/auto_examples/index.txt" rel="nofollow">Show this page source</a>
+    </div>
+     <div class="rel rellarge">
+    
+    <div class="buttonPrevious">
+      <a href="../datasets/index.html">Previous
+      </a>
+    </div>
+    <div class="buttonNext">
+      <a href="plot_mnist_generator.html">Next
+      </a>
+    </div>
+    
+     </div>
+
+    
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      # Set google analytics
+# FIXME
+      _gaq.push(['_setAccount', '222']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    
+
+    <script src="http://www.google.com/jsapi" type="text/javascript"></script>
+    <script type="text/javascript"> google.load('search', '1',
+        {language : 'en'}); google.setOnLoadCallback(function() {
+            var customSearchControl = new
+            #FIXME
+            google.search.CustomSearchControl('016639176250731907682:tjtqbvtvij0');
+            customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+            var options = new google.search.DrawOptions();
+            options.setAutoComplete(true);
+            customSearchControl.draw('cse', options); }, true);
+    </script>
+  </body>
+</html>

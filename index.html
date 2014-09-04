@@ -1,0 +1,373 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+  
+    <title>sklearn-theano &mdash; sklearn-theano 0.0.1 documentation</title>
+  <!-- htmltitle is before nature.css - we use this hack to load bootstrap first -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="_static/css/bootstrap.min.css" media="screen" />
+  <link rel="stylesheet" href="_static/css/bootstrap-responsive.css"/>
+
+    
+    <link rel="stylesheet" href="_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/js/copybutton.js"></script>
+    <script type="text/javascript" src="_static/js/examples.js"></script>
+    <link rel="shortcut icon" href="_static/mini_sloth_bw.ico"/>
+    <link rel="author" title="About these documents" href="about.html" />
+    <link rel="top" title="sklearn-theano 0.0.1 documentation" href="#" />
+    <link rel="next" title="&lt;no title&gt;" href="user_guide.html" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="_static/js/bootstrap.min.js" type="text/javascript"></script>
+  <link rel="canonical" href="http://sklearn-theano.github.io/dev/index.html" />
+
+  <script type="text/javascript">
+    $("div.buttonNext, div.buttonPrevious").hover(
+       function () {
+           $(this).css('background-color', '#FF9C34');
+       },
+       function () {
+           $(this).css('background-color', '#A7D6E2');
+       }
+    );
+    var bodywrapper = $('.bodywrapper');
+    var sidebarbutton = $('#sidebarbutton');
+    sidebarbutton.css({'height': '900px'});
+  </script>
+
+  </head>
+  <body>
+
+<div class="header-wrapper">
+    <div class="header">
+        <p class="logo"><a href="#">
+            <img src="_static/mini_sloth_bw.png" alt="Logo"/>
+        </a>
+        </p><div class="navbar">
+            <ul>
+                <li><a href="../dev/index.html">Home</a></li>
+                <li><a href="../dev/install.html">Installation</a></li>
+                <li class="btn-li"><div class="btn-group">
+		      <a href="documentation.html">Documentation</a>
+		      <a class="btn dropdown-toggle" data-toggle="dropdown">
+			     <span class="caret"></span>
+		      </a>
+		      <ul class="dropdown-menu">
+			<li class="link-title">sklearn-theano 0.1 (development)</li>
+			<li><a href="user_guide.html">User guide</a></li>
+			<li><a href="modules/classes.html">API</a></li>
+			<li class="divider"></li>
+		        <li><a href="http://sklearn-theano.github.io/dev/documentation.html">Development</a></li>
+		        <li><a href="documentation.html">More versions...</a></li>
+		      </ul>
+		    </div>
+		</li>
+            <li><a href="auto_examples/index.html">Examples</a></li>
+            </ul>
+
+            <div class="search_form">
+                <div id="cse" style="width: 100%;"></div>
+            </div>
+        </div> <!-- end navbar --></div>
+</div>
+<!-- Banner -->
+<div class="container banner-container">
+  <div class="row-fluid banner-inner">
+    <div class="hidden-phone">
+      <div class="span6">
+	<div class="row-fluid">
+          <div class="offset2 span8"><div id="index_carousel_tn" class="thumbnail">
+	      <div id="examples_carousel" class="carousel slide" data-interval="false">
+		<ol id="scikit_learn_index_indicators" class="carousel-indicators">
+		  <li data-target="#examples_carousel" data-slide-to="0" class="active"></li>
+		  <li data-target="#examples_carousel" data-slide-to="1"></li>
+		  <li data-target="#examples_carousel" data-slide-to="2"></li>
+		  <li data-target="#examples_carousel" data-slide-to="3"></li>
+		  <li data-target="#examples_carousel" data-slide-to="4"></li>
+		</ol>
+		<!-- Carousel items -->
+		<div class="carousel-inner">
+		  <div class="active item">
+		    <a href="auto_examples/plot_multiple_localization.html">
+                <img src="_images/plot_multiple_localization.png"></a>
+		  </div>
+		  <div class="item">
+		    <a href="auto_examples/plot_single_localization.html">
+		      <img src="_images/plot_single_localization_carousel.png"></a>
+		  </div>
+		  <div class="item">
+		    <a href="auto_examples/plot_mnist_generator.html">
+		      <img src="_images/plot_mnist_generator_carousel.png"></a>
+		  </div>
+		  <div class="item">
+		    <a href="auto_examples/plot_overfeat_layer1_filters.html">
+		      <img src="_images/plot_overfeat_layer1_filters_carousel.png"></a>
+		  </div>
+		  <div class="item">
+		    <a href="auto_examples/plot_asirra_dataset.html">
+		      <img src="_images/plot_asirra_dataset_carousel.png"></a>
+		  </div>
+		</div>
+		<!-- Carousel nav -->
+		<a class="carousel-control left" href="#examples_carousel" data-slide="prev">&lsaquo;</a>
+		<a class="carousel-control right" href="#examples_carousel" data-slide="next">&rsaquo;</a>
+	      </div>
+	  </div></div>
+	</div>
+      </div>
+    </div>
+    <div id="intro_to_sklearn_theano_p" class="span6">
+      <h1>sklearn-theano</h1>
+      <ul>
+        <li>Built on NumPy, SciPy, theano, and matplotlib</li>
+        <li>Open source, commercially usable - BSD license</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<!-- Github "fork me" ribbon -->
+<a href="https://github.com/sklearn-theano/sklearn-theano">
+  <img class="fork-me"
+       style="position: absolute; top: 0; right: 0; border: 0;"
+       src="_static/img/forkme.png"
+       alt="Fork me on GitHub" />
+</a>
+
+<div class="content-wrapper">
+
+
+      <div class="content">
+            
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="no-display"><div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="feature_extraction/index.html">1. Feature extraction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="feature_extraction/index.html#overfeat">1.1. Overfeat</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="datasets/index.html">2. Dataset loading utilities</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="datasets/index.html#sample-images">2.1. Sample images</a></li>
+<li class="toctree-l2"><a class="reference internal" href="datasets/index.html#sample-generators">2.2. Sample generators</a></li>
+<li class="toctree-l2"><a class="reference internal" href="datasets/index.html#larger-datasets">2.3. Larger datasets</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="auto_examples/index.html">Examples</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="auto_examples/index.html#general-examples">General examples</a><ul>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="presentations.html">External Resources, Videos and Talks</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="presentations.html#new-to-scientific-python">New to Scientific Python?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="presentations.html#videos">Videos</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="about.html">About us</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="about.html#people">People</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="documentation.html">Documentation of sklearn-theano 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="datasets/index.html">2. Dataset loading utilities</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="datasets/index.html#sample-images">2.1. Sample images</a></li>
+<li class="toctree-l2"><a class="reference internal" href="datasets/index.html#sample-generators">2.2. Sample generators</a></li>
+<li class="toctree-l2"><a class="reference internal" href="datasets/index.html#larger-datasets">2.3. Larger datasets</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="modules/classes.html">Reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modules/classes.html#sklearn-theano-base-base-classes-and-utility-functions"><tt class="docutils literal"><span class="pre">sklearn_theano.base</span></tt>: Base classes and utility functions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="modules/classes.html#base-classes">Base classes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="modules/generated/sklearn_theano.base.Feedforward.html"><tt class="docutils literal"><span class="pre">sklearn_theano.base</span></tt>.Feedforward</a></li>
+<li class="toctree-l4"><a class="reference internal" href="modules/generated/sklearn_theano.base.Convolution.html"><tt class="docutils literal"><span class="pre">sklearn_theano.base</span></tt>.Convolution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="modules/generated/sklearn_theano.base.PassThrough.html"><tt class="docutils literal"><span class="pre">sklearn_theano.base</span></tt>.PassThrough</a></li>
+<li class="toctree-l4"><a class="reference internal" href="modules/generated/sklearn_theano.base.Standardize.html"><tt class="docutils literal"><span class="pre">sklearn_theano.base</span></tt>.Standardize</a></li>
+<li class="toctree-l4"><a class="reference internal" href="modules/generated/sklearn_theano.base.MaxPool.html"><tt class="docutils literal"><span class="pre">sklearn_theano.base</span></tt>.MaxPool</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="modules/classes.html#functions">Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="modules/generated/sklearn_theano.base.fuse.html"><tt class="docutils literal"><span class="pre">sklearn_theano.base</span></tt>.fuse</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="modules/classes.html#sklearn-theano-datasets-datasets"><tt class="docutils literal"><span class="pre">sklearn_theano.datasets</span></tt>: Datasets</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="modules/classes.html#loaders">Loaders</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="modules/generated/sklearn_theano.datasets.fetch_asirra.html"><tt class="docutils literal"><span class="pre">sklearn_theano.datasets</span></tt>.fetch_asirra</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="modules/generated/sklearn_theano.datasets.fetch_asirra.html#examples-using-sklearn-theano-datasets-fetch-asirra">Examples using <tt class="docutils literal"><span class="pre">sklearn_theano.datasets.fetch_asirra</span></tt></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="modules/generated/sklearn_theano.datasets.load_sample_images.html"><tt class="docutils literal"><span class="pre">sklearn_theano.datasets</span></tt>.load_sample_images</a></li>
+<li class="toctree-l4"><a class="reference internal" href="modules/generated/sklearn_theano.datasets.load_sample_image.html"><tt class="docutils literal"><span class="pre">sklearn_theano.datasets</span></tt>.load_sample_image</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="modules/generated/sklearn_theano.datasets.load_sample_image.html#examples-using-sklearn-theano-datasets-load-sample-image">Examples using <tt class="docutils literal"><span class="pre">sklearn_theano.datasets.load_sample_image</span></tt></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="modules/classes.html#samples-generator">Samples generator</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="modules/generated/sklearn_theano.datasets.fetch_mnist_generated.html"><tt class="docutils literal"><span class="pre">sklearn_theano.datasets</span></tt>.fetch_mnist_generated</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="modules/generated/sklearn_theano.datasets.fetch_mnist_generated.html#examples-using-sklearn-theano-datasets-fetch-mnist-generated">Examples using <tt class="docutils literal"><span class="pre">sklearn_theano.datasets.fetch_mnist_generated</span></tt></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="modules/classes.html#sklearn-theano-feature-extraction-feature-extraction"><tt class="docutils literal"><span class="pre">sklearn_theano.feature_extraction</span></tt>: Feature Extraction</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="modules/classes.html#module-sklearn_theano.feature_extraction">From images</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="modules/generated/sklearn_theano.feature_extraction.OverfeatTransformer.html"><tt class="docutils literal"><span class="pre">sklearn_theano.feature_extraction</span></tt>.OverfeatTransformer</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="modules/generated/sklearn_theano.feature_extraction.OverfeatTransformer.html#examples-using-sklearn-theano-feature-extraction-overfeattransformer">Examples using <tt class="docutils literal"><span class="pre">sklearn_theano.feature_extraction.OverfeatTransformer</span></tt></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="modules/generated/sklearn_theano.feature_extraction.OverfeatClassifier.html"><tt class="docutils literal"><span class="pre">sklearn_theano.feature_extraction</span></tt>.OverfeatClassifier</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="modules/generated/sklearn_theano.feature_extraction.OverfeatClassifier.html#examples-using-sklearn-theano-feature-extraction-overfeatclassifier">Examples using <tt class="docutils literal"><span class="pre">sklearn_theano.feature_extraction.OverfeatClassifier</span></tt></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="modules/generated/sklearn_theano.feature_extraction.OverfeatLocalizer.html"><tt class="docutils literal"><span class="pre">sklearn_theano.feature_extraction</span></tt>.OverfeatLocalizer</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="modules/generated/sklearn_theano.feature_extraction.OverfeatLocalizer.html#examples-using-sklearn-theano-feature-extraction-overfeatlocalizer">Examples using <tt class="docutils literal"><span class="pre">sklearn_theano.feature_extraction.OverfeatLocalizer</span></tt></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="developers/index.html">Contributing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="developers/index.html#note">Note</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="developers/index.html#submitting-a-bug-report">Submitting a bug report</a></li>
+<li class="toctree-l3"><a class="reference internal" href="developers/index.html#retrieving-the-latest-code">Retrieving the latest code</a></li>
+<li class="toctree-l3"><a class="reference internal" href="developers/index.html#contributing-code">Contributing code</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="developers/index.html#how-to-contribute">How to contribute</a></li>
+<li class="toctree-l2"><a class="reference internal" href="developers/index.html#documentation">Documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="developers/index.html#issue-tracker-tags">Issue Tracker Tags</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="developers/index.html#other-ways-to-contribute">Other ways to contribute</a></li>
+<li class="toctree-l3"><a class="reference internal" href="developers/index.html#coding-guidelines">Coding guidelines</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="developers/index.html#additional-help">Additional Help</a></li>
+<li class="toctree-l2"><a class="reference internal" href="developers/index.html#working-notes">Working notes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installing sklearn-theano</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="install.html#installing">Installing</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div><!-- Block section -->
+<div class="container-index">
+<div class="container index-upper">
+<div class="row-fluid">
+
+<!-- Classification -->
+<div class="span4 box">
+<h2 ><p><a class="reference internal" href="feature_extraction/index.html#feature-extraction"><em>Classification</em></a></p>
+</h2>
+<blockquote>
+<p>Identifying to which set of categories a new observation belongs
+to.</p>
+<div class="box-links">
+<strong>Applications</strong>: Image recognition, object localization.</br>
+<strong>Algorithms</strong>:&nbsp;<p><a class="reference internal" href="feature_extraction/index.html#feature-extraction"><em>OverfeatClassifier</em></a>, <a class="reference internal" href="feature_extraction/index.html#feature-extraction"><em>OverfeatLocalizer</em></a>, ...</p>
+<small class="float-right box-example-links"><p><a class="reference internal" href="auto_examples/index.html#general-examples"><em>Examples</em></a></p>
+</small>
+</div>
+</blockquote>
+</div>
+
+<!-- Preprocessing -->
+<div class="span4 box">
+<h2><p><a class="reference internal" href="feature_extraction/index.html#feature-extraction"><em>Preprocessing</em></a></p>
+</h2>
+<blockquote>
+<p>Feature extraction and normalization.</p>
+<div class="box-links">
+<strong>Application</strong>: Transforming input data such as images for use with machine learning algorithms.</br>
+<strong>Modules</strong>:&nbsp;<p><a class="reference internal" href="feature_extraction/index.html#feature-extraction"><em>OverfeatTransformer</em></a>.</p>
+<small class="float-right example-links"><p><a class="reference internal" href="auto_examples/index.html#general-examples"><em>Examples</em></a></p>
+</small>
+</div>
+</blockquote>
+</div>
+<!-- Classification -->
+<div class="span4 box">
+<h2 ><p><a class="reference internal" href="datasets/index.html#datasets"><em>Datasets</em></a></p>
+</h2>
+<blockquote>
+<p>Downloading, managing, and loading for datasets and network weights.
+</p>
+<div class="box-links">
+<strong>Applications</strong>: Automatic loading of image datasets and network weights.</br>
+<strong>Modules</strong>:&nbsp;<p><a class="reference internal" href="datasets/index.html#datasets"><em>Asirra</em></a>, <a class="reference internal" href="datasets/index.html#datasets"><em>Generative MNIST</em></a>, ...</p>
+<small class="float-right box-example-links"><p><a class="reference internal" href="auto_examples/index.html#general-examples"><em>Examples</em></a></p>
+</small>
+</div>
+</blockquote>
+</div>
+
+          </div>
+        </div>
+      </div>
+        <div class="clearer"></div>
+      </div>
+    </div>
+
+    <div class="footer">
+    </div>
+     </div>
+
+    
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      # Set google analytics
+# FIXME
+      _gaq.push(['_setAccount', '222']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    
+
+    <script src="http://www.google.com/jsapi" type="text/javascript"></script>
+    <script type="text/javascript"> google.load('search', '1',
+        {language : 'en'}); google.setOnLoadCallback(function() {
+            var customSearchControl = new
+            #FIXME
+            google.search.CustomSearchControl('016639176250731907682:tjtqbvtvij0');
+            customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+            var options = new google.search.DrawOptions();
+            options.setAutoComplete(true);
+            customSearchControl.draw('cse', options); }, true);
+    </script>
+  </body>
+</html>
